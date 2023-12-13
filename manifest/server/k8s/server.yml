@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: plesio_server
-  name: plesio_server
+    app: plesio-server
+  name: plesio-server
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: plesio_server
+      app: plesio-server
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: plesio_server
+        app: plesio-server
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio_server:206fbfc31007ea478ad21b1db14c806e5b91199f
-        name: plesio_server
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio-server:e1f03fd3a874730dc105f7785c53cab57bedd147
+        name: plesio-server
         resources: {}
 status: {}
