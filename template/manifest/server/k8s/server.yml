@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: plesio_server
+  name: plesio_server
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: plesio_server
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: plesio_server
+    spec:
+      containers:
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio_serverDOCKER_TAG
+        name: plesio_server
+        resources: {}
+status: {}
