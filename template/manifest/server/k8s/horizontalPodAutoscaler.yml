@@ -17,7 +17,7 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 10
+        averageUtilization: 30
 status:
   currentReplicas: 0
   desiredReplicas: 0
