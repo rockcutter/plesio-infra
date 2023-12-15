@@ -3,6 +3,7 @@ kind: HorizontalPodAutoscaler
 metadata:
   creationTimestamp: null
   name: plesio-server
+  namespace: default
 spec:
   maxReplicas: 5
   minReplicas: 2
