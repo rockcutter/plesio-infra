@@ -7,7 +7,6 @@ metadata:
   name: plesio-server
   namespace: default
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: plesio-server
@@ -19,7 +18,7 @@ spec:
         app: plesio-server
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio-server:3776374554cd37bcc6de7e4be33396ad60736af1
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio-server:cdbfff0b129b9808d87d45a961f16e80ad582c7a
         name: plesio-server
         resources: {}
 status: {}
