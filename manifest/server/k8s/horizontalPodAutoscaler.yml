@@ -1,8 +1,8 @@
-apiVersion: autoscaling/v1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   creationTimestamp: null
-  name: plesio-server-hpa
+  name: plesio-server
 spec:
   maxReplicas: 5
   minReplicas: 2
