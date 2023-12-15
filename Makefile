@@ -10,6 +10,7 @@ endif
 generate_manifest:
 	cat template/manifest/server/k8s/server.yml | sed s/DOCKER_TAG/$(_DOCKER_TAG)/ > manifest/server/k8s/server.yml
 	cp template/manifest/server/k8s/loadbalancer.yml manifest/server/k8s/loadbalancer.yml
+	cp template/manifest/server/k8s/horizontalPodAutoscaler.yml manifest/server/k8s/horizontalPodAutoscaler.yml
 
 ##### git
 
