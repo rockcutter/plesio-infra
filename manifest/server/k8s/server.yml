@@ -18,7 +18,7 @@ spec:
         app: plesio-server
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio-server:2dcc878f3478cb5084b1a0d0d98e7d7dad638b21
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/plesio-repo/plesio-server:e30301bed6d87067272afe5eba1e62b7621511bf
         name: plesio-server
         resources:
           limits:
